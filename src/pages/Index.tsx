@@ -1,7 +1,16 @@
-import { BookText, Zap, UserCircle, Sparkles, Volume2 } from "lucide-react";
+import { BookText, Zap, UserCircle, Sparkles, Volume2, User } from "lucide-react";
 import TopicCard from "@/components/TopicCard";
 
 const topics = [
+  {
+    title: "Self Introduction",
+    description: "Learn to introduce yourself confidently in any situation - from casual greetings to professional presentations.",
+    icon: User,
+    path: "/self-introduction",
+    colorClass: "text-topic-selfintro",
+    bgColorClass: "bg-topic-selfintro-bg",
+    worksheetCount: 5,
+  },
   {
     title: "Nouns",
     description: "Learn about naming words - people, places, things, and ideas. Master common, proper, abstract, and collective nouns.",

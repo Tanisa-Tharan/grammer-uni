@@ -10,6 +10,7 @@ import NounsPage from "./pages/NounsPage";
 import VerbsPage from "./pages/VerbsPage";
 import PronounsPage from "./pages/PronounsPage";
 import AdjectivesPage from "./pages/AdjectivesPage";
+import SelfIntroductionPage from "./pages/SelfIntroductionPage";
 import AdverbsPage from "./pages/AdverbsPage";
 import NotFound from "./pages/NotFound";
 
@@ -26,6 +27,7 @@ const App = () => (
           <main className="flex-1">
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/self-introduction" element={<SelfIntroductionPage />} />
               <Route path="/nouns" element={<NounsPage />} />
               <Route path="/verbs" element={<VerbsPage />} />
               <Route path="/pronouns" element={<PronounsPage />} />
