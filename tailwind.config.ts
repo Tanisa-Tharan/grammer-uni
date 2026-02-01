@@ -61,6 +61,8 @@ export default {
           "adjective-bg": "hsl(var(--adjective-bg))",
           adverb: "hsl(var(--adverb-color))",
           "adverb-bg": "hsl(var(--adverb-bg))",
+          selfintro: "hsl(var(--selfintro-color))",
+          "selfintro-bg": "hsl(var(--selfintro-bg))",
         },
         level: {
           "very-basic": "hsl(var(--very-basic))",

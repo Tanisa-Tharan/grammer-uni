@@ -4,6 +4,7 @@ import { BookOpen, Menu, X } from "lucide-react";
 
 const navLinks = [
   { name: "Home", path: "/" },
+  { name: "Self Introduction", path: "/self-introduction" },
   { name: "Nouns", path: "/nouns" },
   { name: "Verbs", path: "/verbs" },
   { name: "Pronouns", path: "/pronouns" },
