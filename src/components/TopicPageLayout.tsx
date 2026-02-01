@@ -1,4 +1,5 @@
-import { LucideIcon } from "lucide-react";
+import { Link } from "react-router-dom";
+import { LucideIcon, ArrowLeft } from "lucide-react";
 import WorksheetCard from "./WorksheetCard";
 
 interface Worksheet {
@@ -28,9 +29,20 @@ const TopicPageLayout = ({
   worksheets,
 }: TopicPageLayoutProps) => {
   return (
-    <div className="min-h-screen pt-20 md:pt-24">
+    <div className="min-h-screen">
+      {/* Back Link */}
+      <div className="container mx-auto px-4 pt-6">
+        <Link
+          to="/"
+          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+        >
+          <ArrowLeft className="w-4 h-4" />
+          Back to All Topics
+        </Link>
+      </div>
+
       {/* Header Section */}
-      <section className={`py-12 md:py-16 ${bgColorClass}`}>
+      <section className={`py-8 md:py-12 ${bgColorClass}`}>
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
             <div
